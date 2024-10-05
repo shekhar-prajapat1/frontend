@@ -1,0 +1,67 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff5ed; /* Header background color */
+    padding: 1rem; /* Added padding for better layout */
+}
+
+.logo {
+    font-family: 'Berkshire Swash', cursive;
+    color: #4d0808;
+    font-size: x-large; /* Logo font size */
+}
+
+.navList {
+    display: flex;
+    list-style: none; /* No bullets for list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navItem {
+    margin-left: 2em; /* Spacing between nav items */
+    font-size: xx-large; /* Font size for nav items */
+}
+
+.navList a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Link color */
+    font-weight: 600; /* Bold text */
+}
+
+.button {
+    padding: 1rem 2rem; /* Button padding */
+    font-size: 1.2rem; /* Button font size */
+    color: white; /* Text color */
+    background-color: #4d0808; /* Button background color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+    margin-left: 1em; /* Spacing between login button and nav items */
+}
+
+.button:hover {
+    background-color: #593030; /* Button hover color */
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .navList {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+    .navItem {
+        margin-left: 0; /* Reset margin for mobile view */
+        margin-bottom: 0.5em; /* Spacing between items */
+        font-size: large; /* Decrease font size */
+    }
+    .button {
+        padding: 0.5rem 1rem; /* Smaller button padding */
+        font-size: 1rem; /* Decrease font size */
+    }
+}
